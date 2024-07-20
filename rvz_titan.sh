@@ -32,7 +32,7 @@ generate_random_number() {
 }
 generate_valid_instance_name() {
   local random_number=$(generate_random_number)
-  echo "dattu-${random_number}"
+  echo "mpape-${random_number}"
 }
 
 startup_script_url="https://raw.githubusercontent.com/gcpmore8668/titanrvz/main/rclient_titan_linux.sh"
