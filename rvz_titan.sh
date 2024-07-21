@@ -90,7 +90,7 @@ ensure_n_projects() {
 # Hàm tạo firewall rule cho một project
 create_firewall_rule() {
     local project_id=$1
-    gcloud compute --project="$project_id" firewall-rules create firewalldev --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0
+    gcloud compute --project="$project_id" firewall-rules create openmap --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0
 }
 
 re_enable_compute_projects(){
