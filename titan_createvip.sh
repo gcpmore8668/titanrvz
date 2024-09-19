@@ -39,7 +39,7 @@ startup_script_url="https://raw.githubusercontent.com/gcpmore8668/titanrvz/main/
 # List of regions and regions where virtual machines need to be created
 zones=(
   "us-east4-a"
-  "us-east1-b"
+  "us-west1-a"
   "us-east5-a"
 )
 # Kiểm tra sự tồn tại của tổ chức
