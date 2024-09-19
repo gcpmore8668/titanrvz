@@ -44,9 +44,7 @@ zones=(
 )
 # Kiểm tra sự tồn tại của tổ chức
 organization_id=$(gcloud organizations list --format="value(ID)" 2>/dev/null)
-while [ -z "$billing_account_id" ]; do
-    organization_id=$(gcloud organizations list --format="value(ID)" 2>/dev/null)
-done
+sleep 3
 echo -e "${YELLOW}ID tổ chức của bạn là: $organization_id ${NC}"
 
 # Lấy ID tài khoản thanh toán
