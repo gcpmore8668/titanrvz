@@ -48,6 +48,9 @@ echo -e "${YELLOW}ID tổ chức của bạn là: $organization_id ${NC}"
 
 # Lấy ID tài khoản thanh toán
 billing_account_id=$(gcloud beta billing accounts list --format="value(name)" | head -n 1)
+while [ -z "$billing_account_id" ]; do
+    billing_account_id=$(gcloud beta billing accounts list --format="value(name)" | head -n 1)
+done
 echo -e "${YELLOW} Billing_account_id của bạn là: $billing_account_id ${NC}"
 
 # Hàm đảm bảo có đủ số lượng dự án
