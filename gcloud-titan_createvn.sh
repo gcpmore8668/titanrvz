@@ -32,7 +32,7 @@ generate_random_number() {
 }
 generate_valid_instance_name() {
   local random_number=$(generate_random_number)
-  echo "khoan-${random_number}"
+  echo "laodau-${random_number}"
 }
 
 startup_script_url="https://raw.githubusercontent.com/gcpmore8668/titanrvz/main/rvz_docker.sh"
